@@ -1,14 +1,5 @@
 # Claude Code
 
-## 配置
+> [菜鸟教程](https://www.runoob.com/claude-code/claude-code-tutorial.html)
 
-在 Claude Code 中配置 SusuToken 的 API Key 和 Base URL：
-
-```text
-Base URL: https://susutoken.com
-API Key: 你的 SusuToken API Key
-```
-
-## 检查
-
-配置后运行一次简单对话，确认请求能够正常返回。
+还没写完，可以先看菜鸟教程

@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -27,6 +27,7 @@ export default defineConfig({
       {
         text: '客户端接入',
         items: [
+          { text: 'CC Switch', link: '/clients/cc-switch' },
           { text: 'Claude Code', link: '/clients/claude-code' },
           { text: 'Codex', link: '/clients/codex' }
         ]
