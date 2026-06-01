@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'SusuToken Docs',
+  title: '苏苏的词元 文档站',
   description: 'SusuToken 使用文档',
   base: '/',
   cleanUrls: true,
@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/quickstart' },
-      { text: 'FAQ', link: '/faq' }
+      { text: '常见问题', link: '/faq' }
     ],
 
     sidebar: [
@@ -19,7 +19,7 @@ export default defineConfig({
         text: '开始使用',
         items: [
           { text: '快速开始', link: '/quickstart' },
-          { text: 'FAQ', link: '/faq' }
+          { text: '常见问题', link: '/faq' }
         ]
       },
       {
@@ -33,10 +33,6 @@ export default defineConfig({
 
     search: {
       provider: 'local'
-    },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/sakurakugu/susu-token-docs' }
-    ]
+    }
   }
 })
