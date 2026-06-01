@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -33,6 +35,19 @@ export default defineConfig({
 
     search: {
       provider: 'local'
+    }
+  },
+
+  transformPageData(pageData, { siteConfig }) {
+    if (!pageData.filePath.endsWith('.md')) {
+      return
+    }
+
+    return {
+      markdownSource: readFileSync(
+        join(siteConfig.srcDir, pageData.filePath),
+        'utf-8'
+      )
     }
   }
 })

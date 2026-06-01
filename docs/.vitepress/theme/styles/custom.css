@@ -1,0 +1,57 @@
+.copy-markdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.copy-markdown-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.copy-markdown-button:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg);
+}
+
+.copy-markdown-button[data-status='copied'] {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.copy-markdown-button[data-status='failed'] {
+  color: var(--vp-c-danger-1);
+  border-color: var(--vp-c-danger-1);
+}
+
+.copy-markdown-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.copy-markdown-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
